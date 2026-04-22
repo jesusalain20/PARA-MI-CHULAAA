@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti, mi amor ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Mi carta especial para ti</h1>
+        <p class="subtitle">Aunque estemos lejos, esto es para recordarte cuánto te quiero</p>
+    </header>
+
+    <!-- Sección de la carta -->
+    <section class="carta">
+        <h2>PARA LA NOVIA MÁS CHULA 💕</h2>
+        
+        <p>No sé muy bien por dónde empezar, son tantas cosas que quiero decir… así que comenzaré diciendo que le diste a mi vida un giro muy bonito. Nunca pasó por mi mente todo lo que hemos vivido juntos, desde la amistad que fuimos construyendo hasta lo que somos ahora.</p>
+        
+        <p>Llegaste inesperadamente a mi vida y fuiste alegrando mi día a día. Nunca pensé que una amistad que empezó en internet pudiera llegar tan lejos; pasar de ser solo alguien con quien jugaba Free Fire JAJJAJAJA, a sentir alegría y emoción con un simple mensaje de buenos días, o no poder dormir si no recibo tus buenas noches.</p>
+        
+        <p>También están esas veces en las que me contabas tu día, y poco a poco fui notando cambios en mí… cambios que terminaron despertando el amor que hoy siento por ti. Fuiste llenando espacios que ni siquiera sabía que existían, y cuando supe que tú también sentías lo mismo por mí, fue una de las emociones más grandes y bonitas que he sentido.</p>
+        
+        <p>Y después, el hecho de que llegáramos a ser novios… aún recuerdo ese día con mucha emoción, daba vueltas en la cama sin poder dormir de la felicidad que sentía. La nueva etapa a la que llegamos, el crecer como relación y notar los cambios al hacernos novios, nos hizo darnos cuenta de muchas cosas.</p>
+        
+        <p>Sabíamos que todo era diferente, y eso nos permitió ver cambios tanto en ti como en mí. En mi caso, conocerte de una forma más profunda, más allá de una amistad, me hizo entender qué te hace feliz, qué te da miedo, qué te enoja o te pone triste. Con solo ver un mensaje fui sintiendo esa conexión… eso me hizo quererte aún más de lo que ya te quería.</p>
+        
+        <p>Ahora me nace hacerte feliz cada día, sin importar la distancia. La distancia también me ha hecho valorar y aprender de cada discusión o momento difícil, porque nada te prepara para eso en un primer noviazgo. Descubrir esos sentimientos y enfrentar ciertas dificultades puede ser algo que asusta, pero aun así, no me imagino viviendo todo esto con alguien que no seas tú.</p>
+        
+        <p>Me gusta compartir estas experiencias contigo, porque aunque hay cosas complicadas en una relación como la nuestra, también hay muchas cosas bonitas. Y cuando veo todo lo que hemos vivido y los momentos que hemos compartido, eso me hace querer seguir creciendo a tu lado, y también verte crecer a ti.</p>
+        
+        <p>Sé que nuestra relación puede parecer una apuesta, pero para mí no lo es. Paso el día pensando en ti, ya sea en un buen día o en uno malo… siempre estás en mis pensamientos. Y eso es lo que me motiva a esforzarme cada día para acortar esta distancia y hacer realidad todos esos planes que tenemos juntos.</p>
+        
+        <p>Esta es la forma en la que puedo expresar todo lo que siento por ti y por todo lo que hemos vivido.</p>
+        
+        <p class="final">GRACIAS POR ESTAR EN MI VIDA, CHULAAAAA 💕</p>
+
+        <!-- Firma mejorada -->
+        <div class="firma">
+            <p><strong>DE:</strong> Jesús Alain</p>
+            <p>Con todo mi amor ❤️</p>
+            <p><strong>PARA:</strong> Danna Paola</p>
+        </div>
+    </section>
+
+        <!-- Sección de fotos -->
+    <section class="fotos">
+        <h2>Nuestros momentos juntos ❤️</h2>
+        <div class="galeria">
+            <img src="images/foto1.jpg" alt="Momento 1">
+            <img src="images/foto2.jpg" alt="Momento 2">
+            <img src="images/foto3.jpg" alt="Momento 3">
+            <img src="images/foto4.jpg" alt="Momento 4">
+            <img src="images/foto5.jpg" alt="Momento 5">
+            <img src="images/foto6.jpg" alt="Momento 6">
+            <img src="images/foto7.jpg" alt="Momento 7">
+            <img src="images/foto8.jpg" alt="Momento 8">
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Hecho con mucho ❤️ solo para ti</p>
+    </footer>
+
+<!-- Modal para ver imagen en grande -->
+<div id="modal" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-contenido" id="img-grande">
+</div>
+<script>
+    const modal = document.getElementById("modal");
+    const imgGrande = document.getElementById("img-grande");
+    const cerrar = document.querySelector(".cerrar");
+
+    const imagenes = document.querySelectorAll(".galeria img");
+
+    imagenes.forEach(img => {
+        img.addEventListener("click", () => {
+            modal.style.display = "block";
+            imgGrande.src = img.src;
+        });
+    });
+
+    cerrar.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    modal.onclick = () => {
+        modal.style.display = "none";
+    };
+</script>
+</body>
+<!-- Corazones flotando -->
+<div class="corazones">
+    <span>💖</span>
+    <span>💜</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+    <span>💘</span>
+</div>
+</html>
